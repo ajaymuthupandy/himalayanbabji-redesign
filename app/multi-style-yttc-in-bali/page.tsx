@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaWhatsapp } from "react-icons/fa6";
-import { CheckList, CtaBand, Split } from "@/components/blocks";
+import { CheckList, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Chip, Photo, Section, Title } from "@/components/ui";
 import type { ImageName } from "@/lib/images";
@@ -160,8 +160,6 @@ export default function MultiStylePage() {
           </div>
         </div>
       </Section>
-
-      <CtaBand title="Start Your Journey in Bali" image="1-220" />
     </>
   );
 }

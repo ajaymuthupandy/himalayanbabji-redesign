@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CtaBand, PageHero, PracticeGrid, ProgramCards, Split } from "@/components/blocks";
+import { PageHero, PracticeGrid, ProgramCards, Split } from "@/components/blocks";
 import { Button, Chip, Section, Title } from "@/components/ui";
 import { programs, waLink } from "@/lib/site";
 
@@ -50,8 +50,6 @@ export default function CoursesPage() {
           </Button>
         </div>
       </Split>
-
-      <CtaBand />
     </>
   );
 }

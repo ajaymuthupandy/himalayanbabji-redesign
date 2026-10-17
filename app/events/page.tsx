@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaWhatsapp } from "react-icons/fa6";
-import { CtaBand, OverlayCards, PageHero, Split } from "@/components/blocks";
+import { OverlayCards, PageHero, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Section, Title, cn } from "@/components/ui";
 import { monthlyEvents, waLink } from "@/lib/site";
@@ -73,8 +73,6 @@ export default function EventsPage() {
           </Button>
         </div>
       </Split>
-
-      <CtaBand />
     </>
   );
 }

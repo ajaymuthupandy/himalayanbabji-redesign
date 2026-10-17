@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaBowlFood, FaPersonPraying, FaSpa } from "react-icons/fa6";
-import { CheckList, CtaBand, PageHero, Split } from "@/components/blocks";
+import { CheckList, PageHero, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Section, Title } from "@/components/ui";
 import { vipassanaBenefits, waLink } from "@/lib/site";
@@ -75,8 +75,6 @@ export default function RetreatsPage() {
           </Button>
         </div>
       </Split>
-
-      <CtaBand title="Make Space for Stillness" image="1-13-2" />
     </>
   );
 }

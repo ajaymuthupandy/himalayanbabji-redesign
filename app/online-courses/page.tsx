@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CtaBand, PageHero, Split } from "@/components/blocks";
+import { PageHero, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Photo, Section, Title } from "@/components/ui";
 import type { ImageName } from "@/lib/images";
@@ -67,8 +67,6 @@ export default function OnlineCoursesPage() {
           <Button href="/courses">In-person courses in Bali</Button>
         </div>
       </Split>
-
-      <CtaBand />
     </>
   );
 }

@@ -8,14 +8,13 @@ import {
   FaFire,
   FaPersonPraying,
   FaSpa,
-  FaWhatsapp,
   FaWind,
 } from "react-icons/fa6";
 import { PiFlowerLotusLight, PiLeafLight, PiUsersLight } from "react-icons/pi";
 import type { ImageName } from "@/lib/images";
 import { practices, type Program, waLink } from "@/lib/site";
 import FadeIn from "./FadeIn";
-import { Button, Photo, Section, Title, cn, type Tone } from "./ui";
+import { Photo, Section, Title, cn, type Tone } from "./ui";
 
 const heroBadges = [
   { Icon: PiFlowerLotusLight, lines: ["Internationally", "Recognized"] },
@@ -261,47 +260,6 @@ export function Gallery({ images }: { images: { name: ImageName; alt: string }[]
         </FadeIn>
       ))}
     </div>
-  );
-}
-
-/* Closing call to action used at the bottom of every page */
-export function CtaBand({
-  title = "Join the Himalayan lineage",
-  sub = "Step into the ancient tradition and deepen your practice and teaching with us in Bali.",
-  image = "1-208",
-}: {
-  title?: string;
-  sub?: string;
-  image?: ImageName;
-}) {
-  return (
-    <section className="group relative isolate overflow-hidden bg-brown text-white">
-      <Photo
-        name={image}
-        alt=""
-        sizes="100vw"
-        position="left center"
-        className="absolute inset-0 -z-20 origin-left scale-[1.04] opacity-25 transition-opacity duration-500 group-hover:opacity-100"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-black/60 via-black/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-      />
-      <div className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-9 md:flex-row md:items-center md:justify-between md:px-6 md:py-10">
-        <div className="max-w-2xl">
-          <h2 className="text-2xl font-semibold uppercase tracking-wide md:text-3xl">{title}</h2>
-          <p className="mt-2 text-lg text-white/85">{sub}</p>
-        </div>
-        <div className="flex shrink-0 flex-wrap gap-3">
-          <Button href={waLink()} variant="light">
-            <FaWhatsapp aria-hidden /> Enroll now
-          </Button>
-          <Button href="/courses" variant="outline">
-            View courses
-          </Button>
-        </div>
-      </div>
-    </section>
   );
 }
 

@@ -14,7 +14,7 @@ export default function Header() {
   const close = () => setOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-beige/70 bg-white/95 backdrop-blur">
+    <header className="relative z-50 border-b border-beige/70 bg-white">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <Link href="/" onClick={close} className="flex shrink-0 items-center gap-3">
           <Image src="/images/logo-mark.png" alt="" width={445} height={240} className="h-11 w-auto" priority />

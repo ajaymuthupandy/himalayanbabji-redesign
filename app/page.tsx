@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa6";
-import { CheckList, CtaBand, Gallery, OverlayCards, PracticeGrid, ProgramCards, Split } from "@/components/blocks";
+import { CheckList, Gallery, OverlayCards, PracticeGrid, ProgramCards, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Photo, Section, Title } from "@/components/ui";
 import { monthlyEvents, programs, teachers, vipassanaBenefits, waLink } from "@/lib/site";
@@ -136,7 +136,7 @@ export default function Home() {
       </Section>
 
       {/* Gallery */}
-      <Section className="pb-5! md:pb-6!">
+      <Section tone="cream">
         <Title sub="Moments from our trainings and ceremonies in Bali.">Life at the Retreat</Title>
         <Gallery
           images={[
@@ -148,8 +148,6 @@ export default function Home() {
           ]}
         />
       </Section>
-
-      <CtaBand title="Authentic Himalayan Tradition Teaching" />
     </>
   );
 }

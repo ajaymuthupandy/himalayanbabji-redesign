@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaClock, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
-import { CtaBand, Gallery, PageHero } from "@/components/blocks";
+import { Gallery, PageHero } from "@/components/blocks";
 import { Button, Section, Title } from "@/components/ui";
 import { site, waLink } from "@/lib/site";
 
@@ -71,8 +71,6 @@ export default function LocationsPage() {
           ]}
         />
       </Section>
-
-      <CtaBand />
     </>
   );
 }

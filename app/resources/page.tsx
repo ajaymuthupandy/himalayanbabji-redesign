@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaArrowRight } from "react-icons/fa6";
-import { CtaBand, PageHero, Split } from "@/components/blocks";
+import { PageHero, Split } from "@/components/blocks";
 import FadeIn from "@/components/FadeIn";
 import { Button, Photo, Section, Title } from "@/components/ui";
 import { posts } from "@/lib/site";
@@ -60,8 +60,6 @@ export default function ResourcesPage() {
           <Button href="/courses">Explore courses</Button>
         </div>
       </Split>
-
-      <CtaBand />
     </>
   );
 }

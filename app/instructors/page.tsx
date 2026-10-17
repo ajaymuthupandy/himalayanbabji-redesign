@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CtaBand, Gallery, PageHero, Split } from "@/components/blocks";
+import { Gallery, PageHero, Split } from "@/components/blocks";
 import { Chip, Section, Title } from "@/components/ui";
 import { teachers } from "@/lib/site";
 
@@ -54,8 +54,6 @@ export default function InstructorsPage() {
           ]}
         />
       </Section>
-
-      <CtaBand title="Learn From the Lineage" />
     </>
   );
 }
